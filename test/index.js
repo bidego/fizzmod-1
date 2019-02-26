@@ -70,16 +70,15 @@ Object.keys(miembros).sort().forEach( k => (miembros[k] < 25 || miembros[k] > 40
  La función multiplicar toma un valor como input de tipo Number o String y lo multiplica por el valor de la variable base.
  La función cambiarBase modifica el valor de la variable base el cual se mantiene para las próximas ejecuciones y
  consultarBase retorna el valor actual de la variable base */
- 
+ var base;
  module.export {
-	base: 2,
- 	multiplicar: function(i) {
- 		return i * this.base;
+	multiplicar: function(i) {
+ 		return i * base;
  	},
  	cambiarBase: function(b) {
- 		this.base = b;
+ 		base = b;
  	},
  	consultarBase: function() {
- 		return this.base;
+ 		return base;
  	}
  }
