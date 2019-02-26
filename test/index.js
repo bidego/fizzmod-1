@@ -7,7 +7,7 @@
 let numeros = [1,2,3,4]
 //mapCustomizado => representa la funcion que ustedes tendrían que crear
 
-mapCustomizado = (input,callback) => input.map(e => callback(e));
+mapCustomizado = (input,callback) => input.map(callback);
 mapCustomizado(numeros,numero=>numero+1) //[2,3,4,5]
 mapCustomizado(numeros,(numero,indice)=>numero+indice) //[1,3,5,7]
 mapCustomizado(numeros,numero=>{}) //[undefined,undefined,undefined,undefined]
