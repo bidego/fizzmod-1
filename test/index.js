@@ -72,7 +72,7 @@ Object.keys(miembros).sort().forEach( k => (miembros[k] < 25 || miembros[k] > 40
  consultarBase retorna el valor actual de la variable base */
  
  module.export {
-	base: 2
+	base: 2,
  	multiplicar: function(i) {
  		return i * this.base;
  	},
