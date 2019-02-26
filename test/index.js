@@ -15,11 +15,7 @@ mapCustomizado(numeros,numero=>{}) //[undefined,undefined,undefined,undefined]
 /**
  * 4) Modificar el prototipo de la funcion constructora Array para que admita como nuevo método la funcion customizada del paso anterior para que cumpla los siguientes tests :
  */
-Array.prototype.mapCustomizado = function(input, callback) {
-	let output = [];
-	input.forEach( (v,i) => output.push(callback(v,i)));
-	return output;
-}
+Array.prototype.mapCustomizado = function(c) { return this.map(c) }
 
 numeros.mapCustomizado(numero=>numero+1) //[2,3,4,5]
 numeros.mapCustomizado((numero,indice)=>numero+indice) //[1,3,5,7]
