@@ -35,7 +35,8 @@ numeros.hasOwnProperty("mapCustomizado") //false
  */
 
 let miembros = { pedro : 35 , ana : 18 , carlos : 43 , juan : 21 , maria : 29 , angela : 31 , jose : 23 , mariana : 41 , eugenio : 19 }
-
+let mar = [] //margen
+let cen = [] //centro
 Object.keys(miembros).sort().forEach( k => (miembros[k] < 25 || miembros[k] > 40) ? mar.push(k) : cen.push(k))
 /**
  * 4) Crear un fork de este repositorio en sus propias cuentas
